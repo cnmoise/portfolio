@@ -1,9 +1,5 @@
 
 /*I don't really want to use the universal selector to change anything but its a requirement*/
-*{
-	font-size: 12px;
-	
-}
 
 body
 {
@@ -13,36 +9,26 @@ body
 	background-image: url("../images/bg3.png");
 	/*alternative in case img can't display*/
 	background-color:#0F0015;
-	
+	padding:0px;
+	margin:0px;
+	height:100%;
 }
 
 div
 {
-	padding:10px;
-	margin:10px;
+	padding:0px;
+	margin:0px;
 	border-radius:4px;
 	background-color:#CAB3F7;
 	box-shadow: 0px 0px 5px #D900AF;
 }
 
-#page
-{
-	padding:0px;
-	padding-top:5px;
-	margin:10px;
-	position:centered;
-	margin-left:auto;
-	margin-right:auto;
-	height:1500px;
-	width:975px;
-	background-color:#0F0015;
-	box-shadow: 0px 0px 25px #D900AF;
-}
 #banner{
 	padding:0px;
-	position:relative;
-	margin-bottom:-30px;
-	height:200px;
+	margin: 0px;
+	position:absolute;
+	height:50%;
+	width: 100%;
 	background-color:#D900AF;
 	box-shadow: 0px 0px 15px #D900AF;
 }
@@ -121,18 +107,6 @@ input[type=text], select {
 	color:silver;
 }
 
-#nav{
-	margin-top:-230px;
-	margin-left:830px;
-	position: fixed;
-	background-color:#020056;
-	width:105px;
-	height:400px;
-	float:right;
-	text-align:center;
-	box-shadow: 0px 0px 5px #54A6E8;
-	
-}
 /*font choice 2*/
 #nav ul{
 	font-family: Times New Roman, serif;	
