@@ -1,243 +1,99 @@
 
 /*I don't really want to use the universal selector to change anything but its a requirement*/
 
-body
-{
-	/*Font choice 1*/
-	font-family: Verdana, Helvetica, Geneva, sans-serif;
-	
-	background-image: url("../images/bg3.png");
-	/*alternative in case img can't display*/
-	background-color:#0F0015;
-	padding:0px;
-	margin:0px;
-	height:100%;
-}
-
+body, html {
+		height: 100%;
+		margin: 0;
+		font: 400 15px/1.8 "Lato", sans-serif;
+		color: #000;
+	}
 div
 {
-	padding:0px;
-	margin:0px;
-	border-radius:4px;
-	background-color:#CAB3F7;
-	box-shadow: 0px 0px 5px #D900AF;
+	background-color:#0F0015;
 }
 
-#banner{
-	padding:0px;
-	margin: 0px;
-	position:absolute;
-	height:50%;
-	width: 100%;
-	background-color:#D900AF;
-	box-shadow: 0px 0px 15px #D900AF;
-}
-	#top div{
-		padding:0px;
-		margin:0px;
-		border-radius:0px;
-		font-size:15px;
-		padding:2px;
+	.bgimg-1, .bgimg-2, .bgimg-3 {
+		position: relative;
+		opacity: 1;
+		/* real heart of paralax scrolling,
+		scroll is default */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
 	}
-	#top ul {
-		text-align:center;
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;		
+	.bgimg-1 {
+		background-image: url("../images/para.jpg");
+		min-height: 60%;
 	}
-	#top li a {
-		font-weight: bold;
-		display: block;
-		color: #3F6C8F;
-		text-align: center;
-		padding:10px;
-		padding-top:2px;
-		padding-bottom:2px;
-		text-decoration: none;
+
+	.bgimg-2 {
+		background-image: url("../images/para2.jpeg");
+		min-height: 400px;
 	}
-	#top
-	{
-		list-style-type:none;
+
+	.bgimg-3 {
+		background-image: url("../images/para3.jpeg");
+		min-height: 400px;
+	}
+	
+	.leftblurb{
+		float:left;
+		background-color: transparent;
+		padding: 18px;
+	}
+	.rightblurb{
+		float: right;
+		background-color: transparent;
+		padding: 18px;
+	}
+
+	.caption {
 		position:relative;
-		height:40px;
-		background-color:#CAB3F7;
-		margin-top:40px;
-		padding:0px;
-		box-shadow: 0px 0px 5px #D900AF;
-		text-align:left;	
-	}
-	#top1{background-color:#020056;}
-	#top1 li {float: left;}
-	#top1 li a {color:#D900AF;}
-	#top1 li a:hover {
-		color: #D900AF;
-		text-shadow: 0px 0px 20px #680AFF;
-		background-color:black;
-	}
-	#top2{background-color:#440BD2;}
-	#top2 li {float: right;}
-	#top2 li a {color: #54A6E8;}
-	#top2 li a:hover {
-		color: #54A6E8;
-		text-shadow: 0px 0px 20px #680AFF;
-		background-color:black;
+		padding:50px 80px;
+		left: 0;
+		width: 100%;
+		height: auto;
+		text-align: center;
+		color: #fff;
 	}
 
-#booking{
-	position:relative;
-	height:200px;
-	width:790px;
-	margin-top:30px;
-	font:13px;
-	font-weight:bolder;
-}
-#booking label{
-	padding-left:5px;
-	
-}
-
-input[type=text], select {
-    padding: 12px 20px;
-    margin: 5px;
-    display: inline-block;
-    border: 0px solid #ccc;
-	border: 0px solid #ccc;
-    box-sizing: border-box;
-	color:silver;
-}
-
-/*font choice 2*/
-#nav ul{
-	font-family: Times New Roman, serif;	
-	list-style-type:none;
-	text-align:center;
-	padding: 0;
-	line-height:2em;
-	font-size:18px;
-	font-weight: bold;
-}
-#nav li a {
-    text-decoration: none;
-	color:#3F6C8F;
-}
-#nav li a:hover {
-	color: #54A6E8;
-	text-shadow: 0px 0px 20px #680AFF;
-}
+	h3 {
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		font-size: 25px;
+		letter-spacing: 10px;
+		color: #fff;
+	}
+	.lead{
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		font: 20px "Lato", sans-serif;
+		color: #fff;
+	}
 
 
-#content
-{
-	position:relative;
-	width:380px;
-	height:900px;
-}
-#content2
-{
-    position:relative;
-    width:790px;
-    height:650px;
-}
-
-#sidecontent
-{
-	position:relative;
-	width:380px;
-	margin-left:420px;
-	margin-top:-930px;
-	height:900px;
-}
-#sidecontent img{
-	margin-bottom:10px;
-	
-}
-
-.caption{
-	display:block;
-	background-color:white;
-	opacity:.8;
-	margin-top:-70px;
-	padding:20px;
-}
-
-/*Font choice 3*/
-.lead{
-	font-size:36px;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-variant: small-caps;
-	letter-spacing:5px;
-}
-
-.styled_button{
-	float:right;
-	padding:10px;
-	border: solid 2px #3F6C8F;
-	border-radius:3px;
-	background-color:#440BD2;
-	font-size:16px;
-	color:#CAB3F7;
-	
-}
-
-.styled_button:hover {
-    
-	color: #54A6E8;
-	border: solid 2px #54A6E8;
-	box-shadow: 0px 0px 20px #54A6E8;
-}
-
-.popkillbutton{
-	float:right;
-	padding:10px;
-	border: solid 2px #3F6C8F;
-	border-radius:3px;
-	background-color:#440BD2;
-	font-size:16px;
-	color:#CAB3F7;
-	
-}
-
-.popkillbutton:hover {
-    
-	color: #54A6E8;
-	border: solid 2px #54A6E8;
-	box-shadow: 0px 0px 20px #54A6E8;
-}
-
-#popup{
-	position:fixed;
-	margin:0;
-	bottom: 0px;
-	right: 0px;
-	background-color:#020056;
-	box-shadow: 0px 0px 25px #D900AF;
-	height:160px;
-	width:300px;
-	z-index:1;
-	
-	font-size:16px;
-	color:#CAB3F7;
-	text-align:center;
-	
-}
+	/* Turn off parallax scrolling for tablets and phones */
+	@media only screen and (max-device-width: 1024px) {
+		.bgimg-1, .bgimg-2, .bgimg-3 {
+			background-attachment: scroll;
+		}
+	}
 
 
 #footer
 {
-	position:fixed;
+	position:relative;
     right: auto;
 	bottom: 0;
 	left: auto;
 	background-color:black;
 	text-align:right;
-	margin:0;
-	width:955px;
-	
 }
 
 #footer ul {
-	list-style-type: none;
+	list-style-type: inline;
     margin: 0;
     padding: 0;
     overflow: hidden;
