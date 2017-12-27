@@ -48,6 +48,14 @@ div
 		background-color: transparent;
 		padding: 18px;
 	}
+	.centerblurb{
+		position:absolute;
+		margin:auto;
+  		/*right: 50%;left: 50%;
+  		bottom: 60%;*/
+		background-color: transparent;
+		padding: 18px;
+	}
 
 	.caption {
 		position:relative;
