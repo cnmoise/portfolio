@@ -50,8 +50,12 @@ div
 	}
 	.centerblurb{
 		position:absolute;
-		left: 40%;
-  		bottom: 50%;
+		left: 50%;
+    	top: 50%;
+    	transform: translate(-50%, -50%);
+
+    	width: 30%;
+		
 		background-color: transparent;
 		padding: 18px;
 	}
@@ -73,17 +77,7 @@ div
 	}
 	.caption1 p{
 		font-size: 22px;
-		padding-left: 100px; 
 	}
-	#b1
-	{
-		background-color: blue;
-	}
-	#b2
-	{
-		background-color: blue;
-	}
-
 
 	h3 {
 		margin:0;
@@ -115,14 +109,69 @@ div
 		background-color: #440BD2;
 	}
 
-	#resumebutton{
+	.linkbutton{
+		padding: 20px;
+		margin: 10px;
+
+		border: solid 2px #3F6C8F;
+		background-color: #440BD2;
+		color: white;
 		text-decoration: none;
+		font-size: 22px;		
+
+		border-radius: 3px;
+	}
+
+	.linkbutton:hover{
+		border-radius: 3px;
+		border: solid 2px red;
+		cursor: pointer;
+	}
+
+	.tlb1{
+		background-color: #6ABDE6;
+		border: solid 2px #59737F;
+
+	}
+	.tlb1:hover{
+		border: solid 2px #B3E7FF;
+	}
+	.tlb2{
+		background-color: #AA0F13;
+		border: solid 2px #B36164;
+	}
+	.tlb2:hover{
+		border: solid 2px #FF2129;
+	}
+
+	#b1
+	{
+		display: none;
+	}
+	#b2
+	{
+		display: none;
+	}
+	.but {
 		padding: 10px;
-		
+		margin: 10px;
 		color: white;
 		border: solid 2px #3F6C8F;
 		border-radius: 3px;
 		background-color: #440BD2;
+		font-size: 22px;
+
+	}
+	.but:hover
+	{
+		border: solid 2px red;
+		background-color: red;
+
+
+	}
+	#butdiv{
+		display: flex;
+		justify-content: center;
 	}
 
 	/* Turn off parallax scrolling for tablets and phones */

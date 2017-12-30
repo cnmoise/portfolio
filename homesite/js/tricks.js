@@ -1,16 +1,11 @@
+function switch_div(divid) {
+	//so we don't have to go searching all the time for this
+	var handler = document.getElementById(divid);
 
-function killpopup() {
-    document.getElementById('popup').style.display = 'none';
+	if(handler.style.display =='none') {
+		handler.style.display = 'block';
+	} else {
+		handler.style.display = 'none';
+	}
+	
 }
-
-
-function statusCheck() {
-				hidden = !hidden;
-				if(hidden) {
-					document.getElementById('b1').style.visibility = 'hidden';
-					document.getElementById('b2').style.visibility = 'hidden';
-				} else {
-					document.getElementById('b1').style.visibility = 'visible';
-					document.getElementById('b2').style.visibility = 'visible';
-				}
-			}
