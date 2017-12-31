@@ -61,11 +61,26 @@ div
 	}
 
 	.caption {
+		/*to fix the problem of float taking 
+		elements out of the flow*/
+		overflow: auto;
 		position:relative;
 		padding:20px 40px;
 		left: 0;
 		height: auto;
 		color: #fff;
+	}
+	.lport{
+		float:left;
+		padding: 15px;
+		width: 48%;
+
+	}
+	.rport{
+		padding: 15px;
+		float: right;
+		width: 48%;
+
 	}
 
 	.caption1 {
@@ -147,10 +162,12 @@ div
 	#b1
 	{
 		display: none;
+		padding: 20px;
 	}
 	#b2
 	{
 		display: none;
+		padding: 20px;
 	}
 	.but {
 		padding: 10px;
@@ -173,6 +190,47 @@ div
 		display: flex;
 		justify-content: center;
 	}
+
+	.tooltip {
+	    display: inline;
+	    position: relative;
+	    color: #fff;
+	    border-bottom: 1px dotted white;
+	    text-decoration: none;
+	}
+	dl{
+		font-size: 22px;
+    	
+
+	}
+	dt{
+		color: rgba(241, 163, 255, 1);
+	}
+
+	.tooltip:hover:after{
+    		background: #333;
+    		background: rgba(241, 163, 255, 0.9);
+    		border-radius: 5px;
+    		bottom: 26px;
+    		color: #fff;
+    		content: attr(title);
+    		left: 20%;
+    		padding: 5px 15px;
+    		position: absolute;
+    		z-index: 98;
+    		width: 220px;
+		}
+		
+		.tooltip:hover:before{
+    		border: solid;
+    		border-color: rgba(241, 163, 255, 0.9) transparent;
+    		border-width: 6px 6px 0 6px;
+    		bottom: 20px;
+    		content: "";
+    		left: 50%;
+    		position: absolute;
+    		z-index: 99;
+		}
 
 	/* Turn off parallax scrolling for tablets and phones */
 	@media only screen and (max-device-width: 1024px) {
