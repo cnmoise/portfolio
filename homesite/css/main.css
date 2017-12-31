@@ -83,6 +83,34 @@ div
 
 	}
 
+.caption0{
+		padding:20px 40px;
+		
+		text-align: center;
+		overflow: auto;
+		position:relative;
+		color: #fff;
+}
+
+	.caption0 div{
+		vertical-align: top;
+
+		display: inline-block;
+		text-align: justify;
+
+		padding: 15px;
+		max-width: 30%;
+		margin: 5px;
+	}
+
+	.caption0 object{
+		position:relative;
+		left: 50%;
+    	top: 50%;
+    	transform: translate(-50%, -50%);
+    	margin-top: 70px;
+	}
+
 	.caption1 {
 		position:relative;
 		padding:20px 40px;
@@ -117,7 +145,7 @@ div
 		list-style-type: none;
 	    float: left;
 	    padding: 0px 5px 0px 5px;
-	    margin: 0px 5px 0px 5px;
+	    margin: 2px 5px 2px 5px;
 		
 		border: solid 2px #3F6C8F;
 		border-radius: 3px;
