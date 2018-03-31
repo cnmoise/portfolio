@@ -10,8 +10,15 @@ body, html {
 div
 {
 	background-color:#0F0015;
-}
 
+}
+.centerblurb a {
+    text-align: center;
+    display: block;
+    margin: 10;
+    font: 400 15px/1.8 "Lato", sans-serif;
+
+}
 	.bgimg-1, .bgimg-2, .bgimg-3 {
 		position: relative;
 		opacity: 1;
@@ -54,10 +61,11 @@ div
     	top: 50%;
     	transform: translate(-50%, -50%);
 
-    	width: 30%;
+    	width: 20%;
 		
 		background-color: transparent;
 		padding: 18px;
+		margin: 10;
 	}
 
 	.caption {
@@ -163,6 +171,7 @@ div
 		font-size: 22px;		
 
 		border-radius: 3px;
+
 	}
 
 	.linkbutton:hover{
@@ -174,7 +183,7 @@ div
 	.tlb1{
 		background-color: #6ABDE6;
 		border: solid 2px #59737F;
-
+		
 	}
 	.tlb1:hover{
 		border: solid 2px #B3E7FF;
